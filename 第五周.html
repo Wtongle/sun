@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/* 第一个 */
+			.anniu{
+				cursor: pointer;
+			}
+			.da{
+				border: 1px solid #FF9900;
+				color:#FF9900 ;
+				font-size: 6px;
+				background-color: #DEB887;
+				padding: 3px;
+				width: 150px;
+				height: 50px;
+				
+			}
+			.yin{
+				display: none;
+			}
+			.xian{
+				display: block;
+			}
+			/* 第二个 */
+			.tan{
+				/* margin: 0 auto; */
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-top: -100px;
+				margin-left: -100px;
+				background-color:yellowgreen;
+				width: 200px;
+				height: 200px;
+				text-align: right;
+				display: none;
+			}
+			.cha{
+				font-size: 15px;
+				text-decoration: none;
+			}
+			/* 第三个 */
+			.yuan{
+				position: absolute;
+			}
+			/* 第四个 */
+			.hezi{
+				width:500px;
+				height: 400px;
+				background-color: #5F9EA0;
+				border: 2px solid;
+			}
+			.tupian{
+				width: 496px;
+				height: 320px;
+				background-color: #008000;
+				border: 2px solid gainsboro;
+			}
+			ul{
+				width: 500px;
+				height: 50px;
+				margin-left: -40px;
+				margin-top: -4px;
+			}
+			li{
+				list-style: none;
+				float: left;
+			}	
+			.tupian img{
+				width: 496px;
+				height: 320px;
+			}
+			/* 第五个 */
+			.mima{
+				 border: 1px solid green;
+			}
+			.bi{
+				position: absolute;
+				left: 145px;
+				top: 3px;
+			}
+			.zuida{
+				border:1px solid white;
+				position: relative;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 第一个 -->
+		<input type="checkbox" value="" class="anniu1" >
+			</div>
+			<div class="da yin" >
+				为了您的信息安全，请不要在网吧或公用电脑上使用此功能!
+			</div>
+			<script>
+			const  anniu1=document.querySelector('.anniu1');
+			const da=document.querySelector('.da');
+			anniu1.onmouseover=function(){
+				da.style.display = 'block';
+			}
+			anniu1.onmouseout=function(){
+				da.style.display = 'none';
+			}
+		</script>
+		<br />
+		<!-- 第二个 -->
+		<a href="#" class="anniu">登录</a>
+		<div class="tan">
+			<a href="#" class="cha">x</a>
+		</div>
+		<script>
+			const  anniu=document.querySelector('.anniu');
+			const  tan=document.querySelector('.tan');
+			const  cha=document.querySelector('.cha');
+			anniu.onclick=function(){
+				tan.style.display='block';
+			}
+			cha.onclick=function(){
+				tan.style.display='none';
+			}
+		</script>
+		<br />
+		<!-- 第三个 -->
+		<input type="text" value="关键字" class="yuan" />
+		<script>
+			const yuan=document.querySelector('.yuan');
+			yuan.onfocus=function(){
+				if(yuan.value=='关键字'){
+				yuan.value='';}
+			}
+			yuan.onblur=function(){
+				if(yuan.value==''){
+					yuan.value='关键字';
+				}
+				}
+		</script>
+		<br />
+		<!-- 第四个 -->
+		<div class="hezi">
+			
+			<img src="tp/t0100b0e8afd0b730fa.jpg" width="496px" height="320px" class="tupian"/>
+			
+			<ul>
+				<li class="tupian1"><img src="tp/t0100b0e8afd0b730fa.jpg" width="100px" height="76px" id="tupian1"></li>
+				<li class="tupian2"><img src="tp/t0136895149d53bf29b.jpg" width="100px" height="76px" id="tupian2"></li>
+				<li class="tupian3"><img src="tp/t013aaae12b11592a73.jpg" width="100px" height="76px" id="tupian3"></li>
+				<li class="tupian4"><img src="tp/t017926a52dff8236a0.jpg" width="100px" height="76px" id="tupian4"></li>
+				<li class="tupian5"><img src="tp/t01f43f92a3456f1f69.jpg" width="100px" height="76px" ></li>
+			</ul>
+		</div>
+		<script>
+			const tupian=document.querySelector('.tupian');
+			const tupian1=document.querySelector('.tupian1');
+			const tupian2=document.querySelector('.tupian2');
+			const tupian3=document.querySelector('.tupian3');
+			const tupian4=document.querySelector('.tupian4');
+			const tupian5=document.querySelector('.tupian5');
+			tupian1.onmouseover=function(){
+				tupian.src='tp/t0100b0e8afd0b730fa.jpg';
+			}
+			tupian2.onmouseover=function(){
+				tupian.src='tp/t0136895149d53bf29b.jpg';
+			}
+			tupian3.onmouseover=function(){
+				tupian.src='tp/t013aaae12b11592a73.jpg';
+			}
+			tupian4.onmouseover=function(){
+				tupian.src='tp/t017926a52dff8236a0.jpg';
+			}
+			tupian5.onmouseover=function(){
+				tupian.src='tp/t01f43f92a3456f1f69.jpg';
+			}
+		</script>
+		<br />
+		<!-- 第五个 -->
+		<div class="zuida">
+		<img src="tp/eyenone.png" class="bi">
+		<input type="password" value="" class="mima"/>
+		</div>
+		<script>
+			const mima=document.querySelector('.mima');
+			const bi=document.querySelector('.bi');
+			
+			let flag=0;
+			bi.onclick=function(){
+			   if(flag===0){
+					 mima.type='text';
+					 bi.src='tp/eyesee.png';
+					 flag=1;
+				 }else{
+					 mima.type='password';
+					 bi.src='tp/eyenone.png';
+					 flag=0;
+				 }
+			}
+		</script>
+	</body>
+</html>
