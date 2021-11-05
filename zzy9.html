@@ -76,6 +76,8 @@
 	</head>
 	<body>
 		<div>
+			<h2>第一题</h2>
+			<hr />
 		<input type="checkbox" class="a1" name="">全选/全不选
 		<button id="quan">反选</button>
 		<div class="div1">
@@ -86,6 +88,8 @@
 			<input type="checkbox" class="a6" name="da">复选框说明信息<br />
 		</div>
 		</div>
+		<h2>第二题(1)</h2>
+		<hr />
 		<div class="first">
 			<h1>Information Form</h1>
 			<form action="Ok.html" method="get">
@@ -160,6 +164,8 @@
 			 </div>
 			</form>
 			</div>
+			<h2>第二题(2)</h2>
+			<hr />
 			<form action="Ok.html" method="get">
 				<dl>
 					<dt class="qwe">姓名：</dt>
@@ -210,6 +216,8 @@
 				</dl>
 			</form>
 			<div>
+				<h2>第三题</h2>
+				<hr />
 				<img src="Snipaste_2021-11-05_14-26-09.png">
 			</div>
 		<script src="jquery.min.js"></script>
@@ -308,11 +316,11 @@
 					let tijiao=document.querySelector('.tijiao');
 					let chongzhi=document.querySelector('.chongzhi');
 					tijiao.addEventListener('click',function(){
-						let fash=true;
+						let mnb=true;
 						if(xingming.value===''){
 							diyi.style.color='red';
 							diyi.textContent='姓名不能为空';
-							fash=false;
+							mnb=false;
 						}else{
 							diyi.textContent='';
 						}
@@ -321,19 +329,19 @@
 						}else{
 							dier.style.color='red';
 							dier.textContent='密码长度必须为2-10位';
-							fash=false;
+							mnb=false;
 						}
 						if(xingbie[0].checked===false&&xingbie[1].checked===false){
 							disan.style.color='red';
 							disan.textContent='性别必须选择一项';
-							fash=false;
+							mnb=false;
 						}else{
 							disan.textContent='';
 						}
 						if(aihao[0].checked===false&&aihao[1].checked===false&&aihao[2].checked===false){
 							disi.style.color='red';
 							disi.textContent='爱好必须选择一项';
-							fash=false;
+							mnb=false;
 						}else{
 							disi.textContent='';
 						}
@@ -342,9 +350,9 @@
 						}else{
 							diwu.style.color='red';
 							diwu.textContent='简介至少10个字符';
-							fash=false;
+							mnb=false;
 						}
-						if(fash===true){
+						if(mnb===true){
 							tijiao.type='submit';
 						}
 					});
