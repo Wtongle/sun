@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.div1{
+				width: 190px;
+				height: 180px;
+				background: red;
+				margin-top: 10px;
+				border: solid;
+				border-right: transparent;
+				font-size: 20px;
+				padding: 10px;
+			}
+			.div1 input{
+				margin-bottom: 15px;
+			}
+			.first{
+				width: 400px;
+				height: 300px;
+				margin: 0 auto;
+			}
+			h1{
+				text-align: center;
+			}
+			#poi{
+				float: left;
+				width: 55px;
+				height: 28px;
+				background-color: #5F9EA0;
+				text-align: center;
+				line-height:28px ;
+					}
+			#qwe{
+				width: 360px;
+				height: 24px;
+				background-color: #DEB887;
+				padding: 2px 0 2px 4px;
+			} 
+			.a{
+				margin-left: 18px;
+				
+			}
+			.b{
+				width: 422px;
+				height: 28px;
+				float: left;
+				/* width: 55px;
+				height: 28px; */
+				background-color: #5F9EA0;
+				text-align: center;
+				line-height:28px ;
+				
+			}
+			.c{
+				margin-top: -12px;
+			}
+			/* p{
+				display: inline;
+			} */
+			.qwe{
+				float: left;
+			}
+			textarea{
+				resize: none;
+			}
+			.asdf{
+				 margin-left: 7px;
+			}
+			p{
+				display: inline;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+		<input type="checkbox" class="a1" name="">全选/全不选
+		<button id="quan">反选</button>
+		<div class="div1">
+			<input type="checkbox" class="a2" name="da">复选框说明信息<br />
+			<input type="checkbox" class="a3" name="da">复选框说明信息<br />
+			<input type="checkbox" class="a4" name="da">复选框说明信息<br />
+			<input type="checkbox" class="a5" name="da">复选框说明信息<br />
+			<input type="checkbox" class="a6" name="da">复选框说明信息<br />
+		</div>
+		</div>
+		<div class="first">
+			<h1>Information Form</h1>
+			<form action="Ok.html" method="get">
+			<dl>
+				<dt id="poi">name</dt>
+				<div class="a">
+				<dd class="name" id="qwe">
+					<input  type="text" name="a" value="" />
+					<p></p>
+				</dd>
+				
+				</div>
+			</dl>
+			<div class="c">
+			<dl>
+				<dt id="poi">pwd</dt>
+				<div class="a">
+				<dd class="pwd" id="qwe">
+					<input  type="text" name="a" value="" >
+					<p></p>
+				</dd>
+				
+				</div>
+			</dl>
+			</div>
+			<div class="c">
+			<dl>
+				<dt id="poi">sex</dt>
+				<div class="a">
+				<dd class="sex" id="qwe">
+					<input  type="radio" name="b" value=""/>male
+					<input type="radio" name="b" value=""/>female
+		<p></p>		</dd>
+				</div>
+			</dl></div>
+			<div class="c">
+			<dl>
+				<dt id="poi">age</dt>
+				<div class="a">
+				<dd id="qwe">
+					<select>
+						<option value="1">10</option>
+						<option value="2">20</option>
+						<option value="3">30</option>
+					</select>
+				</dd>
+				</div>
+			</dl>
+			</div>
+			<div class="c">
+				<div class="c">
+			<dl>
+				<dt id="poi">course</dt>
+				<div class="a">
+					<dd class="course" id="qwe">
+						<input type="checkbox" name="c" value=""/>Chinese
+						<input type="checkbox" name="c"  value=""/>Math
+						<input type="checkbox" name="c"  value=""/>English
+			<p></p>		</dd>
+					
+				</div>
+			</dl>
+			</div>
+			</div>
+			<div class="c">
+			 <dl>
+				 <dt class="b" >
+					 <input type="button" name="" value="Submit it!" class="submit">
+					 <input type="reset" name="" value="Reset it!">
+				 </dt>
+			 </dl>
+			 </div>
+			</form>
+			</div>
+			<form action="Ok.html" method="get">
+				<dl>
+					<dt class="qwe">姓名：</dt>
+					<dd id="xingming">
+						<input  type="text" name="a" value="" class="xingming">
+						<p></p>
+					</dd>
+					<dt class="qwe">密码：</dt>
+					<dd id="mima">
+						<input type="text" name="b" value="" class="mima">
+						<p></p>
+					</dd>
+					<dt class="qwe">性别：</dt>
+					<dd id="xingbie">
+						<input type="radio" name="c" value="" class="xingbie">男
+						<input type="radio" name="c" value="" class="xingbie">女
+						<p></p>
+					</dd>
+					<dt class="qwe">年龄：</dt>
+					<dd>
+						<select class="nianling">
+							<option value="">20</option>
+							<option value="1">10</option>
+							<option value="2">30</option>
+							<option value="3">40</option>
+							<option value="4">50</option>
+						</select>
+					</dd>
+					<dt class="qwe">爱好：</dt>
+					<dd id="aihao">
+						<input type="checkbox" name="d" value="" class="aihao">读书
+						<input  type="checkbox" name="d" value="" class="aihao">音乐
+						<input type="checkbox" name="d" value="" class="aihao">上网
+						<p></p>
+					</dd>
+					<dt class="qwe">简介：</dt>
+					<dd id="jianjie">
+						<textarea name="e" rows="6" cols="15" class="ianjie"></textarea>
+						<p></p>
+					</dd>
+					<dt class="qwe">
+						<input  type="button" name="f" value="提交" class="tijiao">
+					</dt>
+					
+					<dt class="asdf">
+						<input type="reset" name="f" value="重置" class="chongzhi"/>
+					</dt>
+				</dl>
+			</form>
+			<div>
+				<img src="Snipaste_2021-11-05_14-26-09.png">
+			</div>
+		<script src="jquery.min.js"></script>
+		<script>
+			{
+			$('.a1').click(function(){
+				if($('.a1').is(':checked')){
+				$('.a2').attr('checked',true);
+				$('.a3').attr('checked',true);
+				$('.a4').attr('checked',true);
+				$('.a5').attr('checked',true);
+				$('.a6').attr('checked',true);}
+				else{
+					$('.a2').attr('checked',false);
+					$('.a3').attr('checked',false);
+					$('.a4').attr('checked',false);
+					$('.a5').attr('checked',false);
+					$('.a6').attr('checked',false);
+				}
+				
+				});
+				
+				$("#quan").click(function(){
+				$("input[name='da']").each(function(){
+				var flag=$(this).attr('checked');
+				$(this).attr('checked',!flag);
+				
+				});
+				var qu=$('.a1').attr('checked');
+				$('.a1').attr('checked',!qu);
+				});
+				}
+				{
+					const name=document.querySelector('.name input');
+					const p1=document.querySelector('.name p');
+					const pwd=document.querySelector('.pwd input');
+					const p2=document.querySelector('.pwd p');
+					const sex=document.querySelectorAll('.sex input');
+					const p3=document.querySelector('.sex p');
+					const course=document.querySelectorAll('.course input');
+					const p4=document.querySelector('.course p');
+					const tijiao1=document.querySelector('.submit')
+					tijiao1.addEventListener('click',function(){
+						let fash=true;
+						let x=0;
+						if(name.value===''){
+							p1.style.color='red';
+							p1.textContent='姓名不能为空';
+							fash=false;
+						}else{
+							p1.textContent='';
+						}
+						if(pwd.value.length>=2&&pwd.value.length<=10){
+							p2.textContent='';
+						}else{
+							p2.style.color='red';
+							p2.textContent='密码长度2-10位';
+							fash=false;
+						}
+						if(sex[0].checked===false&&sex[1].checked===false){
+							p3.style.color='red';
+							p3.textContent='性别必须选择一项';
+							fash=false;
+						}else{
+							p3.textContent='';
+						}
+						for(let i=0;i<course.length;i++){
+							if(course[i].checked===true){
+								x++;
+							}
+						}
+						if(x>=2){
+							p4.textContent='';
+						}else{
+							p4.style.color='red';
+							p4.textContent='课程至少选择两项';
+							fash=false;
+						}
+						if(fash===true){
+							tijiao1.type='submit';
+						}
+					});
+				}
+				{
+					let xingming=document.querySelector('#xingming input');
+					let diyi=document.querySelector('#xingming p');
+					let mima=document.querySelector('#mima input');
+					let dier=document.querySelector('#mima p');
+					let xingbie=document.querySelectorAll('#xingbie input');
+					let disan=document.querySelector('#xingbie p');
+					let nianling=document.querySelector('.nianling');
+					let aihao=document.querySelectorAll('#aihao input');
+					let disi=document.querySelector('#aihao p');
+					let jianjie=document.querySelector('#jianjie textarea');
+					let diwu=document.querySelector('#jianjie p');
+					let tijiao=document.querySelector('.tijiao');
+					let chongzhi=document.querySelector('.chongzhi');
+					tijiao.addEventListener('click',function(){
+						let fash=true;
+						if(xingming.value===''){
+							diyi.style.color='red';
+							diyi.textContent='姓名不能为空';
+							fash=false;
+						}else{
+							diyi.textContent='';
+						}
+						if(mima.value.length>=2&&mima.value.length<=10){
+								dier.textContent='';
+						}else{
+							dier.style.color='red';
+							dier.textContent='密码长度必须为2-10位';
+							fash=false;
+						}
+						if(xingbie[0].checked===false&&xingbie[1].checked===false){
+							disan.style.color='red';
+							disan.textContent='性别必须选择一项';
+							fash=false;
+						}else{
+							disan.textContent='';
+						}
+						if(aihao[0].checked===false&&aihao[1].checked===false&&aihao[2].checked===false){
+							disi.style.color='red';
+							disi.textContent='爱好必须选择一项';
+							fash=false;
+						}else{
+							disi.textContent='';
+						}
+						if(jianjie.value.length>=10){
+							jianjie.textContent='';
+						}else{
+							diwu.style.color='red';
+							diwu.textContent='简介至少10个字符';
+							fash=false;
+						}
+						if(fash===true){
+							tijiao.type='submit';
+						}
+					});
+				}
+		</script>
+	</body>
+</html>
