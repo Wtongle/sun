@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		
+		  <h2>第一题</h2>
+		  <input type="text" name="" id="input" value="" />
+			<button type="button" class="a" >添加</button><br>
+		  <ol class="ol">
+		   
+		  </ol><br>
+		  <button type="button" class="b">清空列表</button>
+			<hr />
+			<h2>第二题</h2>
+			<p>1.c  2.B  3.C 4.B 5.D 6.B 7.C  8.D  9.A 10.B 11.A 12.A 13.B 14.D 15.B 16.C 17.A 18.B   19.A   20.D</p>
+			<hr />
+			<pre>
+			<h2>第三题</h2>
+			for( $i=1;$i<=100;$i++){
+				echo $i.' ';
+			}
+			<hr />
+			<h2>第四题</h2>
+			for($i=1;$i<=100;$i++){
+				if($i%2===0){
+					echo $i.' ';
+				}
+			}
+			<hr >
+			<h2>第五题</h2>
+			$x='foo';
+			$c='bar';
+			$v='foobar';
+			for($i=1;$i<=100;$i++){
+				echo $i.' ';
+				if($i%3===0&&$i%5!=0){
+					echo $x.' ';
+				}else if($i%5===0&&$i%3!=0){
+					echo $c.' ';
+				}else if($i%5===0&&$i%3===0){
+					echo $v.' ';
+				}
+			}
+		
+			
+			</pre>
+		  <script src="jquery.min.js"></script>
+		  <script>
+		  // let num=0
+		   $('.a').click(function(){
+		    if($('#input').val()==''){
+		     alert('还没填写内容')
+		    }else{
+		     // num++;
+		     $('.ol').prepend(`<li><span class="c">X</span>${$('#input').val()}</li>`);
+		     $('.c').click(function(){
+		      $(this).parent().remove()
+		     })
+		     $('#input').val('')
+		    }
+		   });
+		   $('.b').click(function(){
+		    $('.ol').remove()
+		   });
+		   
+		  </script>
+	</body>
+</html>
